@@ -331,7 +331,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 600px) and (max-width: 750px) {
   .nav {
     display: none;
   }
@@ -351,8 +351,8 @@ span {
 
   .courses {
     display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem;
     background: none;
   }
 
@@ -368,7 +368,7 @@ span {
 
   .week-one,
   .week-two {
-    padding: 50px 20px 50px 50px;
+    padding: 50px 20px 50px 10px;
   }
   .tech {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -380,7 +380,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 750px) and (max-width: 900px) {
   .boot-image {
     display: none;
   }
@@ -389,6 +389,22 @@ span {
     grid-template-columns: none;
     text-align: center;
     padding-top: 20px;
+  }
+
+  .course-image {
+    display: none;
+  }
+
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem;
+    background: none;
+  }
+
+  .week-one,
+  .week-two {
+    padding: 50px 20px 50px 10px;
   }
 
   .contact {
