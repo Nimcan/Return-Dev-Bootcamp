@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  width: 97%;
+  margin: auto;
+}
+
+/* this is navigation division */
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ol {
+  display: flex;
+  list-style: none;
+}
+ol li {
+  padding-right: 40px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mytext-0 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo {
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* this is grid one */
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 20px;
+  height: 600px;
+  justify-content: center;
+}
+
+.images {
+  display: grid;
+  grid-template-rows: 100%;
+}
+.intro {
+  font-size: 3.75rem;
+  font-weight: bold;
+}
+strong {
+  color: #00896c;
+}
+.mytext-1 {
+  font-size: 1.75rem;
+}
+.boot-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 85% 15% 18% 82% / 44% 57% 43% 56%;
+  box-shadow: 20px -20px 13px #00896c, -20px 20px 13px #015d88;
+}
+
+.btn-apply {
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: #00896c;
+  color: black;
+  cursor: pointer;
+}
+
+.btn-apply:hover {
+  background-color: #00896c;
+  color: white;
+}
+
+/* who this course is for division */
+
+.yaa {
+  background-color: #21c49c;
+  margin-top: 80px;
+  padding: 60px;
+  border-radius: 10px;
+}
+
+.mytext-2 {
+  text-align: center;
+}
+
+.mytext-3 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* bootcamp courses */
+.courses {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  gap: 0.25rem;
+  margin-top: 80px;
+  padding: 30px 10px 30px 5px;
+  border-radius: 10px;
+}
+
+.course-image {
+  width: 100%;
+  border-radius: 15px 50px 30px;
+  box-shadow: 20px -20px 13px #00896c, -20px 20px 13px #015d88;
+  height: 400px;
+}
+
+.PREBOOTCAMP {
+  padding-left: 10px;
+}
+
+.week-one {
+  background-color: #21c49c;
+  padding-top: 100px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.week-two {
+  background-color: #21c49c;
+  padding-top: 100px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+ul {
+  list-style: none;
+}
+
+.fa-check-circle {
+  font-size: 20px;
+}
+
+.boot-h1 {
+  margin: 15px 0px 10px 0px;
+}
+
+/* bootcamp schedule */
+
+.tech-container {
+  margin: 70px 0px 30px 0px;
+  background-color: #f4f4f4;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.tech {
+  display: grid;
+  grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.tech-images {
+  width: 60%;
+  cursor: pointer;
+}
+
+.mytext-5 {
+  text-decoration: underline;
+}
+
+/* about us div */
+.about {
+  color: black;
+  padding: 30px 10px 20px 10px;
+}
+
+.mytext-6 {
+  padding-left: 10px;
+}
+
+span {
+  color: #47da77;
+  font-weight: bold;
+}
+
+.mytext-8,
+.mytext-9,
+.mytext-10 {
+  padding-top: 20px;
+}
+
+.mytext-7,
+.mytext-8,
+.mytext-9,
+.mytext-10 {
+  font-size: 20px;
+}
+
+/* this is contact division */
+
+.address-dev {
+  margin-top: 90px;
+  background-color: #203a49;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.map-image {
+  width: 90%;
+}
+
+.map-image1 {
+  width: 111%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.mytext-11 {
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+}
+
+.mytext-12 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.fa-envelope,
+.fa-map-marker-alt,
+.fa-phone-square-alt,
+.fa-home {
+  font-size: 30px;
+  margin: 20px;
+}
+
+/* This is the footer div */
+.footer {
+  width: 100%;
+  background-color: #47da77;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.foot-image {
+  width: 120px;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+  .boot-image {
+    display: none;
+  }
+
+  .web-background {
+    background-image: url(./images/bubble-animated-background.svg);
+  }
+  .grid1 {
+    grid-template-columns: none;
+    text-align: center;
+  }
+
+  .intro,
+  .mytext-1 {
+    color: white;
+  }
+
+  .btn-apply {
+    color: white;
+  }
+
+  .yaa {
+    padding: 20px;
+  }
+
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    background: none;
+  }
+
+  .course-image {
+    display: none;
+  }
+
+  .PREBOOTCAMP {
+    border-radius: 15px;
+    padding: 20px;
+    background: #a095b4;
+  }
+
+  .week-one {
+    margin-right: 5px;
+  }
+
+  .week-two {
+    margin-right: 5px;
+  }
+
+  .tech-container {
+    padding: 20px;
+  }
+  .tech {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3em;
+  }
+
+  .contact {
+    grid-template-columns: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav {
+    display: none;
+  }
+
+  .boot-image {
+    display: none;
+  }
+
+  .grid1 {
+    grid-template-columns: none;
+    text-align: center;
+  }
+
+  .btn-apply {
+    color: white;
+  }
+
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    background: none;
+  }
+
+  .course-image {
+    display: none;
+  }
+
+  .PREBOOTCAMP {
+    border-radius: 15px;
+    padding: 20px;
+    background: #21c49c;
+  }
+
+  .week-one,
+  .week-two {
+    padding: 50px 20px 50px 50px;
+  }
+  .tech {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3em;
+  }
+
+  .contact {
+    grid-template-columns: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .boot-image {
+    display: none;
+  }
+
+  .grid1 {
+    grid-template-columns: none;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .contact {
+    grid-template-columns: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact {
+    grid-template-columns: none;
+  }
+}
